@@ -7,7 +7,7 @@
   </head>
   <body>
     <small id="dataVisit">
-      <span id="last"></span>
+      <span id="last">Last</span>
       <span id="next"></span>
     </small>
   </body>
@@ -24,12 +24,15 @@
     font-size: 20px;
     color: white;
     font-family: monospace;
+
+    display: grid;
+    place-items: center;
   }
   span {
     display: block;
     height: 20px;
   }
-  @keyframes fadeInUp {
+  @keyframes fadeOutUp {
     from {
       opacity: 1;
       transform: translateY(0px);
@@ -39,7 +42,7 @@
       transform: translateY(-20px);
     }
   }
-  @keyframes fadeOutUp {
+  @keyframes fadeInUp {
     from {
       opacity: 0;
       transform: translateY(0px);
